@@ -1,12 +1,24 @@
-// Write your code in this file!
-function addFive(someNumber) {
-  //everything I want my function to do I put inside these curly braces
-  //in this example, lets say I want my function, addFive, to add 5 to any number I pass in (someNumber), but only IF the number is greater than zero
-  let result
-  if (someNumber > 0) {
-    result = someNumber + 5;
+function scuberGreetingForFeet (feet) {
+  if (feet <= 400) {
+    return 'This one is on me!';
+  } else if (1999 < feet && feet < 2500) {
+    return "I will gladly take your thirty bucks.";
+  } else {
+    return "No can do.";
   }
-  //at the end, if I want my function to return something, I need to state it:
-  return result
 }
- 
+
+function ternaryCheckCity (city) {
+  return city === 'NYC' ? 'Ok, sounds good.' : 'No go.';
+}
+
+function switchOnCharmFromTip (tip) {
+  switch (tip) {
+    case 'generous':
+      return 'Thank you so much.';
+    case 'not as generous':
+      return 'Thank you.';
+    default:
+      return 'Bye.';
+  }
+}
